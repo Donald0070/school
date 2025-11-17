@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>school adminstrator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="Untitled-1.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <h3 class="na">school admin panel</h3>
+
+    <ul class="nav flex-column nav-pills">
+      <li class="nav-item dropdown dropstart">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+          >الـصـفوف</a
+        >
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" href="#demo" data-bs-toggle="collapse"
+              >اضافة صـف</a
+            >
+          </li>
+          <li><a class="dropdown-item" href="#">استعراض صـف</a></li>
+          <li><a class="dropdown-item" href="#">تعديل صـف</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown dropstart">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+          >الشـعـب</a
+        >
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" href="#demo2" data-bs-toggle="collapse"
+              >اضافة شـعـبـة</a
+            >
+          </li>
+          <li><a class="dropdown-item" href="#">استعراض الـشعـب</a></li>
+          <li><a class="dropdown-item" href="#">تعديل الـشـعـب</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown dropstart">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+          >الـطـلاب</a
+        >
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" data-bs-toggle="collapse" href="#demo3"
+              >اضافة طـالـب</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" data-bs-toggle="collapse" href="#demo5"
+              >استعراض الـطـلاب</a
+            >
+          </li>
+          <li><a class="dropdown-item" href="#">تعديل الـطلاب</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown dropstart">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+          >الـمـعـلـمـيـن</a
+        >
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" data-bs-toggle="collapse" href="#demo4"
+              >اضافة مـعـلـم</a
+            >
+          </li>
+          <li><a class="dropdown-item" href="#">استعراض الـمـعـلـمـيـن</a></li>
+          <li><a class="dropdown-item" href="#">تعديل الـمـعـلـمـيـن</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <section class="sect" style="display: inline-block">
+      <div class="collapse" id="demo" style="font-weight: 700">
+        <form>
+          <div class="mb-3">
+            <label for="title" class="form-label"> رقـم الـصـف</label>
+            <input
+              type="text"
+              class="form-control"
+              id="title"
+              placeholder="أدخـل رقـم الـصف"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="author" class="form-label">اسم الـمـعلم </label>
+            <input
+              type="text"
+              class="form-control"
+              id="author"
+              placeholder="أدخل اسم الـمـعـلـم"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="category" class="form-label">اسـم الـمـادة</label>
+            <select class="form-select" id="category">
+              <option selected disabled>اختر الـمـادة</option>
+              <option>عـلـوم</option>
+              <option>تاريخ</option>
+              <option>رياضيات</option>
+              <option>ديانة</option>
+              <option>عربي</option>
+              <option>انكليزي</option>
+              <option>اجتماعيات</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="publishDate" class="form-label">تاريخ الـبـدء</label>
+            <input type="date" class="form-control" id="publishDate" />
+          </div>
+          <button
+            type="button"
+            onclick="alert(' تمت الاضافة بنجاح ✅')"
+            class="buttonv"
+          >
+            اضـافـة
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="sect" style="display: inline-block">
+      <div class="collapse" id="demo2" style="font-weight: 700">
+        <form>
+          <div class="mb-3">
+            <label for="title" class="form-label"> رقـم الشعبة</label>
+            <input
+              type="text"
+              class="form-control"
+              id="title"
+              placeholder="أدخـل رقـم الشعبة"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="author" class="form-label">اسم الـمـعلم </label>
+            <input
+              type="text"
+              class="form-control"
+              id="author"
+              placeholder="أدخل اسم الـمـعـلـم"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="category" class="form-label">اسـم الـمـادة</label>
+            <select class="form-select" id="category">
+              <option selected disabled>اختر الـمـادة</option>
+              <option>عـلـوم</option>
+              <option>تاريخ</option>
+              <option>رياضيات</option>
+              <option>ديانة</option>
+              <option>عربي</option>
+              <option>انكليزي</option>
+              <option>اجتماعيات</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="category" class="form-label">مكان الشعبة</label>
+            <select class="form-select" id="category">
+              <option selected disabled>اختر المكان</option>
+              <option>طابق اول</option>
+              <option>طابق ثاني</option>
+              <option>طابق ثالث</option>
+              <option>طابق رابع</option>
+            </select>
+          </div>
+          <button
+            type="button"
+            onclick="alert(' تمت الاضافة بنجاح ✅')"
+            class="buttonv"
+          >
+            اضـافـة
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="sect" style="display: inline-block">
+      <div class="collapse" id="demo3" style="font-weight: 700">
+        <form>
+          <div class="mb-3">
+            <label for="title" class="form-label"> الأسـم الـثـلاثـي</label>
+            <input
+              type="text"
+              class="form-control"
+              id="title"
+              placeholder="أدخـل الاسم"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="author" class="form-label">اسم الام </label>
+            <input
+              type="text"
+              class="form-control"
+              id="author"
+              placeholder="أدخل اسم الام فقط"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="publishDate" class="form-label">تاريخ الـمـيـلاد</label>
+            <input type="date" class="form-control" id="publishDate" />
+          </div>
+          <div class="mb-3">
+            <label for="publishDate" class="form-label">
+              الصورة الـشـخصيـة</label
+            >
+            <input type="file" class="form-control" id="publishDate" />
+          </div>
+
+          <button
+            type="button"
+            onclick="alert(' تمت الاضافة بنجاح ✅')"
+            class="buttonv"
+          >
+            اضـافـة
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="sect" style="display: inline-block; margin-top: 3.5vh">
+      <div class="collapse" id="demo4" style="font-weight: 700">
+        <form>
+          <div class="mb-3">
+            <label for="title" class="form-label"> الأسـم الـثـلاثـي</label>
+            <input
+              type="text"
+              class="form-control"
+              id="title"
+              placeholder="أدخـل الاسم"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="author" class="form-label">اسم الام </label>
+            <input
+              type="text"
+              class="form-control"
+              id="author"
+              placeholder="أدخل اسم الام فقط"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="publishDate" class="form-label">تاريخ الـمـيـلاد</label>
+            <input type="date" class="form-control" id="publishDate" />
+          </div>
+          <div class="mb-3">
+            <label for="publishDate" class="form-label">
+              الصورة الـشـخصيـة</label
+            >
+            <input type="file" class="form-control" id="publishDate" />
+          </div>
+          <div class="mb-3">
+            <label for="category" class="form-label">الـصـف </label>
+            <select class="form-select" id="category">
+              <option selected disabled>تحديد الصف</option>
+              <option>صــف اول</option>
+              <option>صــف ثاني</option>
+              <option>صــف ثالث</option>
+              <option>صــف رابع</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="category" class="form-label"> الشعبة</label>
+            <select class="form-select" id="category">
+              <option selected disabled>تحديد الـشعـبـة</option>
+              <option>شــعـبـة اولى</option>
+              <option>شــعـبـة ثانية</option>
+              <option>شــعـبـة ثالثة</option>
+              <option>شــعـبـة رابعة</option>
+            </select>
+          </div>
+
+          <button
+            type="button"
+            onclick="alert(' تمت الاضافة بنجاح ✅')"
+            class="buttonv"
+          >
+            اضـافـة
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <div class="table-responsive collapse" id="demo5" style="font-weight: 700">
+      <table class="table table-bordered table-hover sstt align-middle">
+        <thead class="table-light">
+          <tr>
+            <th>الرقم</th>
+            <th>اسم الطالب</th>
+            <th>رقم الصف</th>
+            <th>تاريخ الالتحاق</th>
+            <th>الشعبة</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>محمد علي راتب</td>
+            <td>4</td>
+            <td>2021-11-01</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>اوس محمد سلمان</td>
+            <td>5</td>
+            <td>2025-09-15</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>احمد منعم عمايري</td>
+            <td>1</td>
+            <td>2025-02-25</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>جلنار بدر السعد</td>
+            <td>2</td>
+            <td>2025-03-31</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>منيرة احمد الحسين</td>
+            <td>8</td>
+            <td>2025-04-12</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>احمد محمد الشرع</td>
+            <td>3</td>
+            <td>2025-02-2</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>مصطفى يوسف سلامة</td>
+            <td>6</td>
+            <td>2025-05-05</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

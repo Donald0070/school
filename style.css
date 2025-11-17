@@ -1,0 +1,39 @@
+body {
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+
+.na {
+  display: flex;
+  place-content: center;
+}
+.nav {
+  float: inline-end;
+  display: inline-block;
+  --bs-nav-link-padding-x: 1rem;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-font-weight: ;
+  --bs-nav-link-color: var(--bs-link-color);
+  --bs-nav-link-hover-color: var(--bs-link-hover-color);
+  --bs-nav-link-disabled-color: var(--bs-secondary-color);
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.sect {
+  margin-inline-start: 1%;
+  margin-inline-end: 3vh;
+  background-image: radial-gradient(#001fff, transparent);
+}
+h3 {
+  border-radius: 25px;
+  border: 2px solid blue;
+  font-size: 4.5vh;
+  color: rgb(6, 126, 238);
+}
+.nav-pills .nav-link {
+  line-height: 8;
+  border: 2px solid;
+  border-radius: 25px;
+  border-top: none;
+}
