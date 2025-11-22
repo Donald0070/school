@@ -8,8 +8,10 @@ body {
   place-content: center;
 }
 .nav {
-  float: inline-end;
-  display: inline-block;
+  display: flex;
+  border-top: 2px solid blue;
+  border-bottom: 2px solid blue;
+  margin-bottom: 3% !important;
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
@@ -19,36 +21,60 @@ body {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  justify-content: space-around;
 }
-.sect {
-  margin-inline-start: 1%;
-  margin-inline-end: 3vh;
-  background-image: radial-gradient(#001fff, transparent);
+.collapse {
+  transition: height 1s ease;
+  border: none;
 }
-h3 {
-  border-radius: 25px;
-  border: 2px solid blue;
-  font-size: 4.5vh;
-  color: rgb(6, 126, 238);
+.collapse.show:has(table) {
+  box-shadow: 12px 12px 12px rgb(128, 95, 247);
+  height: auto; /* يضبط ارتفاع الـ collapse حسب الجدول */
 }
-.nav-pills .nav-link {
-  line-height: 8;
-  border: 2px solid;
-  border-radius: 25px;
-  border-top: none;
+element.style {
+  margin-top: 1%;
+  font-weight: 700;
 }
-.dropdown-item {
-    display: block;
-    width: 100%;
-    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
-    clear: both;
-    font-weight: 400;
-    color: #0d6efd;
-    text-align: inherit;
-    text-decoration: none;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0;
-    border-radius: var(--bs-dropdown-item-border-radius,0);
+.collapse.show {
+  height: 100%;
+  box-shadow: 5px 5px 10px rgb(128, 95, 247);
+  transition: height 1s ease;
+  padding: 10px;
+  border: 2px solid #0d6efd;
+  border-radius: 20px;
+  color: #0d6efd;
 }
 
+h3 {
+  background: blue;
+  margin-bottom: 3%;
+  font-size: 4.5vh;
+  color: #fff;
+}
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+  clear: both;
+  font-weight: 400;
+  color: #0d6efd;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  border-radius: var(--bs-dropdown-item-border-radius, 0);
+}
+.all {
+  display: flex;
+  gap: 25px;
+}
+button {
+  background-color: lightblue;
+  font-weight: bolder;
+  color: blue;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
