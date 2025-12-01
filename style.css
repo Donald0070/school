@@ -1,6 +1,5 @@
-body {
-  height: 100vh;
-  background-color: rgb(255, 255, 255);
+body html {
+  background-image: linear-gradient(blue);
 }
 
 .na {
@@ -8,10 +7,11 @@ body {
   place-content: center;
 }
 .nav {
+  /* border-bottom: 2px solid var(--bs-warning-bg-subtle); */
   display: flex;
-  border-top: 2px solid blue;
-  border-bottom: 2px solid blue;
-  margin-bottom: 3% !important;
+  border-top: 2px solid #ffffff;
+  /* border-bottom: 2px solid blue; */
+  margin-bottom: 1% !important;
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
@@ -24,6 +24,7 @@ body {
   justify-content: space-around;
 }
 .collapse {
+  word-wrap: break-word;
   transition: height 1s ease;
   border: none;
 }
@@ -31,10 +32,7 @@ body {
   box-shadow: 12px 12px 12px rgb(128, 95, 247);
   height: auto; /* يضبط ارتفاع الـ collapse حسب الجدول */
 }
-element.style {
-  margin-top: 1%;
-  font-weight: 700;
-}
+
 .collapse.show {
   height: 100%;
   box-shadow: 5px 5px 10px rgb(128, 95, 247);
@@ -46,8 +44,7 @@ element.style {
 }
 
 h3 {
-  background: blue;
-  margin-bottom: 3%;
+  /* margin-bottom: 1%; */
   font-size: 4.5vh;
   color: #fff;
 }
@@ -66,6 +63,12 @@ h3 {
   border-radius: var(--bs-dropdown-item-border-radius, 0);
 }
 .all {
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: inset 5px 5px 10px rgb(128 95 247 / 42%);
+  box-shadow: 2 2 2 2;
+  padding: 20px;
+  border: 2px solid #0d6efd;
   display: flex;
   gap: 25px;
 }
@@ -77,4 +80,67 @@ button {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+@media (max-width: 768px) {
+  .form-control,
+  .form-select {
+    width: 100%;
+  }
+}
+.first {
+  color: #04e6ff;
+}
+
+.ba {
+  border-top-right-radius: 80px;
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  background-color: #0d6efd;
+}
+.nav-link {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: #ffffff;
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+.carousel-caption {
+  border-radius: 57px;
+  border: none;
+  background-color: #000000ba;
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+.effect {
+  font-weight: bolder;
+  box-shadow: inset 0px 16px 20px 3px #0d6efd;
+}
+form {
+  margin-left: 26pt;
+}
+.mb-4 {
+  display: block;
+  display: flex;
+  place-content: center;
+  justify-content: center;
+  color: #0d6efd;
+  margin-left: 8px;
+}
+caption {
+  caption-side: top; /* افتراضي: أعلى الجدول */
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
 }
