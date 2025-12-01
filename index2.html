@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>school adminstrator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="effect">
+      <div class="ba">
+        <a href="index.html">
+          <h3 class="na text-center">
+            <span class="first">S</span>chool &nbsp;<span class="first">A</span
+            >dmin &nbsp;<span class="first">P</span>anel
+          </h3></a
+        >
+
+        <ul class="nav nav-pills">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              >الـصـفوف</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="index2.html">اضافة صـف</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="index-3.html">استعراض صـف</a>
+              </li>
+              <li><a class="dropdown-item" href="index4.html">تعديل صـف</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              >الشـعـب</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="index-5.html">اضافة شـعـبـة</a>
+              </li>
+              <a class="dropdown-item" href="index-6.html">استعراض الـشعـب</a>
+              <li>
+                <a class="dropdown-item" href="index-7.html">تعديل الـشـعـب</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              >الـطـلاب</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="index-8.html">اضافة طـالـب</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="index-9.html"
+                  >استعراض الـطـلاب</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="index-10.html">تعديل الـطلاب</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              >الـمـعـلـمـيـن</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="index-11.html">اضافة مـعـلـم</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#demo6"
+                  >استعراض الـمـعـلـمـيـن</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">تعديل الـمـعـلـمـيـن</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <form class="mb-3">
+        <div>
+          <h2 class="mb-4">اضـافـة صــف</h2>
+          <label for="title" class="form-label"> رقـم الـصـف</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            placeholder="أدخـل رقـم الـصف"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="author" class="form-label">اسم الـمـعلم </label>
+          <input
+            type="text"
+            class="form-control"
+            id="author"
+            placeholder="أدخل اسم الـمـعـلـم"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="category" class="form-label">اسـم الـمـادة</label>
+          <select class="form-select" id="category">
+            <option selected disabled>اختر الـمـادة</option>
+            <option>عـلـوم</option>
+            <option>تاريخ</option>
+            <option>رياضيات</option>
+            <option>ديانة</option>
+            <option>عربي</option>
+            <option>انكليزي</option>
+            <option>اجتماعيات</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="publishDate" class="form-label">تاريخ الـبـدء</label>
+          <input type="date" class="form-control" id="publishDate" />
+        </div>
+        <button
+          type="button"
+          onclick="alert(' تمت الاضافة بنجاح ✅')"
+          class="buttonv"
+        >
+          اضـافـة
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

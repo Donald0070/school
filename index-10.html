@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>school adminstrator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="effect">
+      <div class="ba">
+        <a href="index.html">
+          <h3 class="na text-center">
+            <span class="first">S</span>chool &nbsp;<span class="first">A</span
+            >dmin &nbsp;<span class="first">P</span>anel
+          </h3></a
+        >
+
+        <ul class="nav nav-pills">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              >الـصـفوف</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="index2.html">اضافة صـف</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="index-3.html">استعراض صـف</a>
+              </li>
+              <li><a class="dropdown-item" href="index4.html">تعديل صـف</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              >الشـعـب</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="index-5.html">اضافة شـعـبـة</a>
+              </li>
+              <a class="dropdown-item" href="index-6.html">استعراض الـشعـب</a>
+              <li>
+                <a class="dropdown-item" href="index-7.html">تعديل الـشـعـب</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              >الـطـلاب</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="index-8.html">اضافة طـالـب</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="index-9.html"
+                  >استعراض الـطـلاب</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="index-10.html">تعديل الـطلاب</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              >الـمـعـلـمـيـن</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="index-11.html">اضافة مـعـلـم</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="index-12.html"
+                  >استعراض الـمـعـلـمـيـن</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="index-13.html"
+                  >تعديل الـمـعـلـمـيـن</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container my-4">
+      <h2 class="mb-4">تعديل بيانات الـطالـب</h2>
+      <form>
+        <!-- اسم الطالب -->
+        <div class="mb-3">
+          <label for="name" class="form-label"> اسـم الـطـالـب</label>
+          <input
+            class="form-control"
+            id="name"
+            type="text"
+            placeholder="أدخل اسـم الـطالـب"
+          />
+        </div>
+        <!-- رقم الصف -->
+        <div class="mb-3">
+          <label for="className" class="form-label">رقـم الصف</label>
+          <select class="form-select" id="className">
+            <option>صف أول</option>
+            <option>صف ثاني</option>
+            <option>صف ثالث</option>
+            <option>صف رابع</option>
+            <option>صف خامس</option>
+          </select>
+        </div>
+
+        <!-- رقم البطاقة -->
+        <div class="mb-3">
+          <label for="className2" class="form-label">رقـم الـبـطاقـة</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="className2"
+            placeholder="أدخـل رقـم الـبـطاقـة"
+          />
+        </div>
+
+        <!-- المواد الدراسية -->
+        <div class="mb-3">
+          <label class="form-label">المواد الدراسية</label><br />
+          <input type="checkbox" /> رياضيات<br />
+          <input type="checkbox" /> علوم<br />
+          <input type="checkbox" /> لغة عربية<br />
+          <input type="checkbox" /> لغة أجنبية<br />
+          <input type="checkbox" /> لغة فرنسية<br />
+          <input type="checkbox" /> تربية دينية<br />
+          <input type="checkbox" />
+          اجتماعيات<br />
+          <input type="checkbox" /> فيزياء <br />
+        </div>
+
+        <!-- ملاحظات -->
+        <div class="mb-3">
+          <label for="notes" class="form-label">ملاحظات</label>
+          <textarea class="form-control" id="notes" rows="3"></textarea>
+        </div>
+
+        <!-- أزرار -->
+        <button
+          type="submit"
+          class="btn btn-primary"
+          onclick="alert(' تمت الاضافة بنجاح ✅')"
+        >
+          حفظ التعديلات
+        </button>
+        <button type="reset" class="btn btn-secondary">إلغاء</button>
+      </form>
+    </div>
+  </body>
+</html>

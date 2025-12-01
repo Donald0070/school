@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>school adminstrator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="effect">
+      <div class="ba">
+        <a href="index.html">
+          <h3 class="na text-center">
+            <span class="first">S</span>chool &nbsp;<span class="first">A</span
+            >dmin &nbsp;<span class="first">P</span>anel
+          </h3></a
+        >
+
+        <ul class="nav nav-pills">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              >الـصـفوف</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="index2.html">اضافة صـف</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="index-3.html">استعراض صـف</a>
+              </li>
+              <li><a class="dropdown-item" href="index4.html">تعديل صـف</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              >الشـعـب</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="index-5.html">اضافة شـعـبـة</a>
+              </li>
+              <a class="dropdown-item" href="index-6.html">استعراض الـشعـب</a>
+              <li>
+                <a class="dropdown-item" href="index-7.html">تعديل الـشـعـب</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              >الـطـلاب</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="index-8.html">اضافة طـالـب</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="index-9.html"
+                  >استعراض الـطـلاب</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="index-10.html">تعديل الـطلاب</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              href="#"
+              >الـمـعـلـمـيـن</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="index-11.html">اضافة مـعـلـم</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="index-12.html"
+                  >استعراض الـمـعـلـمـيـن</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="index-13.html"
+                  >تعديل الـمـعـلـمـيـن</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="demo2" style="font-weight: 700">
+      <h2 class="mb-4">استعراض الـطـلاب</h2>
+      <table class="table align-middle">
+        <caption>
+          جدول الطلاب في الصف الأول
+        </caption>
+        <thead class="table-light">
+          <tr>
+            <th>الرقم</th>
+            <th>اسم الطالب</th>
+            <th>رقم الصف</th>
+            <th>تاريخ الالتحاق</th>
+            <th>الخيارات</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>محمد علي راتب</td>
+            <td>1</td>
+            <td>2021-11-01</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>اوس محمد سلمان</td>
+            <td>1</td>
+            <td>2025-09-15</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>احمد منعم عمايري</td>
+            <td>1</td>
+            <td>2025-02-25</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>جلنار بدر السعد</td>
+            <td>1</td>
+            <td>2025-03-31</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>منيرة احمد الحسين</td>
+            <td>1</td>
+            <td>2025-04-12</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>احمد محمد الشرع</td>
+            <td>1</td>
+            <td>2025-02-2</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>مصطفى يوسف سلامة</td>
+            <td>1</td>
+            <td>2025-05-05</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table align-middle">
+        <caption>
+          جدول الطلاب في الصف الثاني
+        </caption>
+        <thead class="table-light">
+          <tr>
+            <th>الرقم</th>
+            <th>اسم الطالب</th>
+            <th>رقم الصف</th>
+            <th>تاريخ الالتحاق</th>
+            <th>الخيارات</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>محمد علي راتب</td>
+            <td>2</td>
+            <td>2021-11-01</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>اوس محمد سلمان</td>
+            <td>2</td>
+            <td>2025-09-15</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>احمد منعم عمايري</td>
+            <td>2</td>
+            <td>2025-02-25</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>جلنار بدر السعد</td>
+            <td>2</td>
+            <td>2025-03-31</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>منيرة احمد الحسين</td>
+            <td>2</td>
+            <td>2025-04-12</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>احمد محمد الشرع</td>
+            <td>2</td>
+            <td>2025-02-2</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>مصطفى يوسف سلامة</td>
+            <td>2</td>
+            <td>2025-05-05</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table align-middle">
+        <caption>
+          جدول الطلاب في الصف الـثـالـث
+        </caption>
+        <thead class="table-light">
+          <tr>
+            <th>الرقم</th>
+            <th>اسم الطالب</th>
+            <th>رقم الصف</th>
+            <th>تاريخ الالتحاق</th>
+            <th>الخيارات</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>محمد علي راتب</td>
+            <td>3</td>
+            <td>2021-11-01</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>اوس محمد سلمان</td>
+            <td>3</td>
+            <td>2025-09-15</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>احمد منعم عمايري</td>
+            <td>3</td>
+            <td>2025-02-25</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>جلنار بدر السعد</td>
+            <td>3</td>
+            <td>2025-03-31</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>منيرة احمد الحسين</td>
+            <td>3</td>
+            <td>2025-04-12</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>احمد محمد الشرع</td>
+            <td>3</td>
+            <td>2025-02-2</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>مصطفى يوسف سلامة</td>
+            <td>3</td>
+            <td>2025-05-05</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table align-middle">
+        <caption>
+          جدول الطلاب في الصف الـرابـع
+        </caption>
+        <thead class="table-light">
+          <tr>
+            <th>الرقم</th>
+            <th>اسم الطالب</th>
+            <th>رقم الصف</th>
+            <th>تاريخ الالتحاق</th>
+            <th>الخيارات</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>محمد علي راتب</td>
+            <td>4</td>
+            <td>2021-11-01</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>اوس محمد سلمان</td>
+            <td>4</td>
+            <td>2025-09-15</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>احمد منعم عمايري</td>
+            <td>4</td>
+            <td>2025-02-25</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>جلنار بدر السعد</td>
+            <td>4</td>
+            <td>2025-03-31</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>منيرة احمد الحسين</td>
+            <td>4</td>
+            <td>2025-04-12</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>احمد محمد الشرع</td>
+            <td>4</td>
+            <td>2025-02-2</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>مصطفى يوسف سلامة</td>
+            <td>4</td>
+            <td>2025-05-05</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table align-middle">
+        <caption>
+          جدول الطلاب في الصف الـخـامـس
+        </caption>
+        <thead class="table-light">
+          <tr>
+            <th>الرقم</th>
+            <th>اسم الطالب</th>
+            <th>رقم الصف</th>
+            <th>تاريخ الالتحاق</th>
+            <th>الخيارات</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>محمد علي راتب</td>
+            <td>5</td>
+            <td>2021-11-01</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>اوس محمد سلمان</td>
+            <td>5</td>
+            <td>2025-09-15</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>احمد منعم عمايري</td>
+            <td>5</td>
+            <td>2025-02-25</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>جلنار بدر السعد</td>
+            <td>5</td>
+            <td>2025-03-31</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>منيرة احمد الحسين</td>
+            <td>5</td>
+            <td>2025-04-12</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>احمد محمد الشرع</td>
+            <td>5</td>
+            <td>2025-02-2</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>مصطفى يوسف سلامة</td>
+            <td>5</td>
+            <td>2025-05-05</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table align-middle">
+        <caption>
+          جدول الطلاب في الصف الـسـادس
+        </caption>
+        <thead class="table-light">
+          <tr>
+            <th>الرقم</th>
+            <th>اسم الطالب</th>
+            <th>رقم الصف</th>
+            <th>تاريخ الالتحاق</th>
+            <th>الخيارات</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>محمد علي راتب</td>
+            <td>6</td>
+            <td>2021-11-01</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>اوس محمد سلمان</td>
+            <td>6</td>
+            <td>2025-09-15</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>احمد منعم عمايري</td>
+            <td>6</td>
+            <td>2025-02-25</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>جلنار بدر السعد</td>
+            <td>6</td>
+            <td>2025-03-31</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>منيرة احمد الحسين</td>
+            <td>6</td>
+            <td>2025-04-12</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>احمد محمد الشرع</td>
+            <td>6</td>
+            <td>2025-02-2</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>مصطفى يوسف سلامة</td>
+            <td>6</td>
+            <td>2025-05-05</td>
+            <td>
+              <button class="btn btn-sm btn-warning">✏️ تعديل</button>
+              <button class="btn btn-sm btn-danger">🗑️ حذف</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
